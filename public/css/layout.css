@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.pc {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10vw;
+    height: 85px;
+    width: 100vw;
+    justify-content: center;
+    background-color: #363637;
+}
+
+.pc .left {
+    display: flex;
+}
+
+.pc .left .logo {
+    width: 85px;
+    height: 85px;
+    margin-right: 19px;
+    cursor: pointer;
+}
+
+.pc .left div {
+    display: flex;
+    margin: 15px 19px;
+    font-size: 18px;
+    color: white;
+    height: auto;
+    cursor: pointer;
+}
+
+.pc .left div img {
+    width: 32px;
+    height: 32px;
+    margin: auto 15px auto 0;
+}
+
+.pc .left div p {
+    margin: auto 0;
+}
+
+.pc .right {
+    display: flex;
+    height: 100%;
+    color: white;
+}
+
+.pc .right div {
+    margin: auto 0 auto 40px;
+    text-align: center;
+    transition: background-color 0.5s linear, color 0.5s linear;
+    background-color: transparent;
+    color: white;
+}
+
+.pc .right div:hover {
+    transition: background-color 0.5s linear, color 0.5s linear;
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+}
+
+.phone{
+    display: none;
+    justify-content: space-between;
+    width: 100vw;
+    height: 40px;
+    z-index: 1000;
+    background-color: #363637;
+}
+
+.phone .left{
+    display: flex;
+    align-items: center;
+}
+
+.drop-menu{
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.click-menu{
+    width: 30px;
+    height: 20px;
+    background-color: #ffb718;
+    padding: 10px 5px;
+}
+
+.drop-menu .click-menu img{
+    margin: auto;
+    width: 30px;
+    height: 20px;
+}
+
+.drop-menu .menu{
+    width: 100vw;
+    display: none;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    /*grid-row-gap: 10px;*/
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+    background-color: #363637;
+}
+
+.drop-menu .menu a{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 10px 0;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #ffb718;
+    border-bottom: 1px solid black;
+}
+
+.drop-menu .menu a:nth-last-child(1){
+    border-bottom: unset;
+}
+
+.phone .left p{
+    color: #ffb718;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.bin{
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 5px 30px 0 0;
+}
+
+.postheader {
+    position: relative;
+    height: 75px;
+    width: 100vw;
+    background-color: #FFB718;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.postheader div {
+    width: 660px;
+    height: 16px;
+    margin: auto;
+    padding: 26px 0 25px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-column-gap: 20px;
+    cursor: pointer;
+}
+
+.postheader div p {
+    transition: background-color 1s linear;
+    background-color: transparent;
+    text-align: center;
+    padding: 3px;
+}
+
+.postheader div p:hover {
+    transition: background-color 1s linear;
+    background-color: #768ac2;
+}
+
+.postheader-phone {
+    display: none;
+    width: 100%;
+    height: 35px;
+    grid-template-columns: repeat(2 , auto);
+    grid-row-gap: 200px;
+    align-items: center;
+    background-color: #363637;
+}
+
+.postheader-phone a{
+    display: block;
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+}
+
+.postheader-phone a:nth-last-child(1){
+    color: #ffb718;
+}
+
+footer {
+    width: 952px;
+    height: 180px;
+    padding-left: calc((100vw - 952px) / 2);
+    padding-right: calc((100vw - 952px) / 2);
+    background-color: #363637;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 80px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+footer div:nth-child(1) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 42px;
+    width: 162px;
+    height: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: calc((180px - 32px) / 2);
+}
+
+footer div:nth-child(1) img {
+    margin: auto 0;
+}
+
+footer div:nth-child(2) {
+    width: 255px;
+    height: 100%;
+}
+
+footer div:nth-child(2) img {
+    width: 135px;
+    height: 135px;
+    padding: 5px;
+    margin-left: calc((100% - 135px) / 2);
+    margin-right: calc((100% - 135px) / 2);
+}
+
+footer div:nth-child(2) div {
+    margin: 6px auto 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+}
+
+footer div:nth-child(3) {
+    width: 167px;
+    height: 70px;
+    margin-top: calc((180px - 70px) / 2);
+}
+
+@media screen and (max-width: 1000px) {
+    .pc {
+        font-size: 13px;
+        display: flex;
+        grid-column-gap: unset;
+        justify-content: center;
+    }
+
+    .pc .left div {
+        font-size: 13px;
+    }
+
+    .pc .right div {
+        margin-left: 20px;
+    }
+
+    footer{
+        width: calc(100% - 40px);
+        padding: 0 20px;
+        grid-column-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pc{
+        display: none;
+    }
+
+    .phone{
+        display: flex;
+    }
+
+    .postheader{
+        display: none;
+    }
+
+    .postheader-phone{
+        display: grid;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+
+    footer div:nth-child(1) {
+        width: auto;
+        grid-column-gap: 20px;
+    }
+
+    footer div:nth-child(3) {
+        width: auto;
+    }
+
+    footer div:nth-child(3) {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer{
+        height: auto;
+        grid-template-columns: auto;
+        grid-column-gap: unset;
+        grid-template-rows: repeat(3, auto);
+        grid-row-gap: 20px;
+        padding-top: 30px;
+    }
+
+    footer div:nth-child(1), footer div:nth-child(2), footer div:nth-child(3) {
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+
+    footer div:nth-child(1){
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    footer div:nth-child(2){
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    footer div:nth-child(3){
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
