@@ -15,6 +15,7 @@
                             <div class="desc"><p class="text">{{ $el->desc }}</p></div>
                         </div>
                         <p>{{ $el->name }}</p>
+                        <p style="font-weight:bolder;font-size: 20px;margin-top: 0;">{{ $el->price }} грн</p>
                         <div class="btn">В КОРОБКУ</div>
                     </div>
                 @endforeach
